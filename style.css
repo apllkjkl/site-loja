@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: rgb(250, 219, 43);
+    background-color: rgb(233, 215, 114);
     color: white;
 
 }
@@ -22,31 +22,33 @@ body{
     background-image: url();
     background-size: cover;
     background-position: center;
-
 }
 
 .conteudo{
-    padding: 10px 10%;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
 }
 
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    width: calc(100svw - 20px)
 }
 
-/*
-.logo{
-
-    width:140px;
-}*/
+nav > ul {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
 
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
 
 }
 
@@ -61,7 +63,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #e6fb6f;
+    background: rgb(17, 25, 92);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -72,23 +74,53 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-.header-text{
-    margin-top: 20%;
-    font-size: 40px;
 
+
+.header-text{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    width: calc(100svw - 100px);
+    font-size: 40px;
+    margin-top: 100px;
 }
 
+.header-text >img{
+    width: 700px;
+}
+
+.header-text > div {
+    padding-left: 120px;
+}
 .header-text h1{
     font-size: 50px;
-    margin-top: 20px;
 
 }
 
+
+.header-text p{
+    color: rgb(12, 24, 94);
+    font-size: 50px;
+
+}
 /*about*/
 
 #sobre{
-    padding: 80px 0;
-    color: #ababab;
+    background-color: #21085c;
+    
+}
+
+.sobre2 h1{
+    margin-top: 70px;
+    padding: 10px 0px 0px 0px;
+    color: rgb(243, 198, 74);
+}
+
+.sobre2 p{
+    color: rgb(255, 255, 255);
+
 }
 
 .row{
@@ -101,17 +133,50 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 
-.sobre1 img{
-    width: 100%;
+.sobre1 > img{
+    padding: 60px 0;
+    width: 150%;
     border-radius: 15px;
+    
 }
 
 .sobre2{
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: #350553;
+#sub-title{
+    justify-content: center;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(233, 215, 114);
+}
+
+.tab-titles{
+    display: flex;
+    margin:20px 0 40px;
+     
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
 }
