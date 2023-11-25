@@ -16,6 +16,8 @@ body{
 
 }
 
+/*cabeçalho*/
+
 #header{
     width: 100%;
     height: 100vh;
@@ -74,7 +76,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-
+/*boas-vindas*/
 
 .header-text{
     display: flex;
@@ -84,11 +86,11 @@ nav ul li a:hover::after{
     align-items: center;
     width: calc(100svw - 100px);
     font-size: 40px;
-    margin-top: 100px;
+    margin-top:60px;
 }
 
 .header-text >img{
-    width: 700px;
+    width: 500px;
 }
 
 .header-text > div {
@@ -105,7 +107,10 @@ nav ul li a:hover::after{
     font-size: 50px;
 
 }
-/*about*/
+
+
+/*sobre*/
+
 
 #sobre{
     background-color: #21085c;
@@ -170,7 +175,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: rgb(233, 215, 114);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -180,3 +185,58 @@ nav ul li a:hover::after{
 .tab-links.active-link::after{
     width: 50%;
 }
+
+
+.tab-contents ul li{
+    list-style:none;
+    margin:10px 0;
+
+}
+
+.tab-contents ul li span{
+    color: yellow;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/*cardapios*/
+
+#cardapios{
+    padding: 100px 0;
+
+}
+
+h1{
+    text-align: center;
+}
+
+.cardapios-lista{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.cardapios-lista div{
+    background: #1f045ee9;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+
+}
+
+.cardapios-lista a{
+    color: rgb(224, 231, 25);
+}
+

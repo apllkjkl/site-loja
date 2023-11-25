@@ -8,18 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- -----------cabeçalho---------- -->
+
     <div id="header">
         <div class="cabecalho">
             <nav>
                 
                 <img src="images/logo1.svg" alt="">
                 <ul>
-                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#header">Início</a></li>
                     <li><a href="#sub-title">Sobre nós</a></li>
-                    <li><a href="#">Cardapio</a></li>
+                    <li><a href="#">Cardápios</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
+
+ <!-- -----------boas-vindas---------- -->       
+    
             <div class="header-text">
                 <img src="/images/logo-batedeira.svg" alt="">
                 <div>
@@ -29,6 +35,8 @@
             </div>
         </div>
     </div>
+
+<!-- -----------sobre---------- -->
 
     <div id="sobre">
         <div class="conteudo">
@@ -45,18 +53,103 @@
                          textexto textexto textext <br>o textexto textexto texto</p>
                         
                         <div class="tab-titles">
-                            <p class="tab-links active-link">Encomendas</p>
-                            <p class="tab-links"></p>
-                            <p class="tab-links">Pedidos</p>
+                            <p class="tab-links active-link" onclick="opentab(titulo1 )">Titulo1</p>
+                            <p class="tab-links" onclick="opentab(titulo2 )">Titulo2</p>
+                            <p class="tab-links" onclick="opentab(titulo3 )">Titulo3</p>
                         </div>
-                        <div class="tab-contents">
+                        <div class="tab-contents active-link">
                             <ul>
-                              <li><span>no sei</span><br>Confeitaria</li>
+                              <li><span>texto</span><br>texto texto texto texto</li>
+                              <li><span>texto</span><br>texto texto texto texto</li>
+                              <li><span>texto</span><br>texto texto texto texto</li>
+                              
+                            </ul>
+                        </div>
+                        <div class="tab-contents active-tab" id="titulo1">
+                            <ul>
+                              <li><span>texto1</span><br>texto texto texto texto</li>
+                              <li><span>texto1</span><br>texto texto texto texto</li>
+                              <li><span>texto1</span><br>texto texto texto texto</li>
+                              
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="titulo2">
+                            <ul>
+                              <li><span>texto2</span><br>texto texto texto texto</li>
+                              <li><span>texto2</span><br>texto texto texto texto</li>
+                              <li><span>texto2</span><br>texto texto texto texto</li>
+                              
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="titulo3">
+                            <ul>
+                              <li><span>texto3</span><br>texto texto texto texto</li>
+                              <li><span>texto3</span><br>texto texto texto texto</li>
+                              <li><span>texto3</span><br>texto texto texto texto</li>
+                              
                             </ul>
                         </div>
                 </div>
             </div>
         </div>
     </div>
+
+   <!-- -----------cardapios---------- -->
+
+   <div id="cardapios">
+    <div class="conteudo">
+
+        <div class="cardapios-lista">
+            <div>
+                <h2>Salgados</h2>
+                <p>texto texto txto textotexto texto txtotexto texto txto textotexto texto txtotexto texto txto textotexto texto 
+                    txtotexto texto txto textotexto texto txto</p>
+                     <a href="#">veja nosso cardapio</a>
+            </div>
+            <div>
+                <h2>Doces</h2>
+                <p>texto texto txto textotexto texto txtotexto texto txto textotexto texto txtotexto texto txto textotexto texto 
+                    txtotexto texto txto textotexto texto txto</p>
+                     <a href="#">veja nosso cardapio</a>
+            </div>
+            <div>
+                <h2>Bolos</h2>
+                <p>texto texto txto textotexto texto txtotexto texto txto textotexto texto txtotexto texto txto textotexto texto 
+                    txtotexto texto txto textotexto texto txto</p>
+                     <a href="#">veja nosso cardapio</a>
+            </div>
+
+        </div>
+    </div>
+
+   </div>
+
+   <!-- ----------contato---------- -->
+
+   <div></div>
+
+
+
+    <script>
+
+
+/*sobre*/
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablinks of tablinks){
+                tablinks.classList.remove("active-link")
+            }
+            for(tabcontents of tabcontents){
+                tabcontents.classList.remove("active-tab")
+            }
+        }
+
+
+        
+    </script>
+
+
 </body>
 </html>
