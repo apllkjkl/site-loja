@@ -90,7 +90,7 @@ nav ul li a:hover::after{
 }
 
 .header-text >img{
-    width: 500px;
+    width: 600px;
 }
 
 .header-text > div {
@@ -150,11 +150,14 @@ nav ul li a:hover::after{
 }
 
 #sub-title{
-    justify-content: center;
+    display: flex;
+    justify-content: start;
     font-size: 70px;
     font-weight: 700;
     color: rgb(233, 215, 114);
 }
+
+
 
 .tab-titles{
     display: flex;
@@ -241,11 +244,8 @@ h1{
     color: rgb(224, 231, 25);
 }
 
+.cardapios-lista > img{ 
+    
 
-#banner{
-    display: block;
-    width: 0px;
-    float: left;
-    
-    
 }
+
