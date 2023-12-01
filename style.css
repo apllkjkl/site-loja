@@ -245,7 +245,8 @@ h1{
 }
 
 .cardapios-lista > img{ 
-    
-
+    height: 400px;
+    display: flex;+
+    margin-top: -400px;
 }
 
